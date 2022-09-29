@@ -1,0 +1,12 @@
+sim7000 port
+
+first steps: 
+1. follow the steps described on https://embarcados.com.br/portando-o-zephyr-para-a-placa-de-desenvolvimento-slstk3401a/
+2. do the modifications --> verify the modifications done at the branch https://github.com/rdmeneze/add_mdm_sim7000 
+3. create a test project using the previous step: 
+   3.1. at the new project, use the command 'west init -m https://github.com/rdmeneze/zephyr -mr add_mdm_sim7000' and 
+        do all the steps to initialize and update the project
+   3.2  build a test project, using the following example (it is an example): 
+        west build -p always -b nrf52840_mdk zephyr/samples/basic/blinky
+
+
